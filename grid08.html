@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>grid08</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form style="margin:20px" >
+        <div class="form-group form-row">
+            <label for="txtID" class="col-sm-2">
+                會員帳號
+            </label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control"
+                       name="txtID" id="txtID">
+            </div>
+            <div class="col-sm-4">
+                <label>性別:</label>
+                <div class="form-check-inline">
+                    <input type="radio" name="radGender" id="radF"  value="0">
+                    <label for="radF">女</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="radio" name="radGender" id="radM"   value="1">
+                    <label for="radF">男</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group form-row">
+            <label for="txtEmail" class="col-sm-2">
+                Email
+            </label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" name="txtEmail" id="txtEmail"
+                       placeholder="輸入電子郵件信箱">
+            </div>
+        </div>
+        <div class="form-group form-row">
+            <label for="txtPwd" class="col-sm-2">
+                密碼
+            </label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control"
+                       name="txtPwd" id="txtPwd"
+                       placeholder="輸入密碼">
+            </div>
+        </div>
+        <div class="form-group form-row">
+            <label for="chkA">
+                <input  type="checkbox" name="chkA" id="chkA">
+                訂閱相關活動資訊
+            </label>
+        </div>
+        <input class="btn btn-primary" type="submit" value="確認送出" />
+    </form>
+</body>
+</html>

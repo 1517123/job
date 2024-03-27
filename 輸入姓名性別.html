@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <script>
+            function HelloByName(){
+                
+                var userName=document.getElementById("userName").value;
+                var gender =document.getElementById("gender").value;
+                var str = "";
+                if(gender==1){
+                    str = "先生";
+                }
+                else{
+                    str = "小姐";
+                }
+                alert("Hello!大家好,我是"+userName+str);
+            }
+        </script>
+
+    </head>
+    <script>
+
+    </script>
+
+    <body>
+        <p>
+            請輸入姓名:<input type="text" id="userName">
+        </p>
+
+        <p>
+            性別：
+            <select id="gender">
+                <option value="1">男</option>
+                <option value="0">女</option>
+            </select>
+        </p>
+        <p>
+            <input type="button" value="確定" onclick="HelloByName()">
+        </p>
+    
+    </body>
+</html>

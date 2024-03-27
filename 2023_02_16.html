@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/bootstrap.min.css" rel="stylesheet"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/test.js"></script>
+        
+
+    </head>
+    <script>
+        function fnScore(){
+            var score = document.getElementById("input_score").value;
+            var show = document.getElementById("showScore");
+            if (score>100 || score<0 || score==""){
+                msg = '<div class="alert alert-warning">成績請介於0~100之間</div>'
+            }
+            else{
+                if (score<60){
+                msg = '<div class="alert alert-danger">成績不及格</div>'
+                }
+                else if (score<70){
+                msg = '<div class="alert alert-success">成績及格，丙等</div>'
+                }
+                else if (score<80){
+                msg = '<div class="alert alert-success">成績及格，乙等</div>'
+                }
+                else if (score<90){
+                msg = '<div class="alert alert-success">成績及格，甲等</div>'
+                }
+                else{
+                    msg = '<div class="alert alert-success">成績及格,優等</div>'
+                }
+            }
+            show.innerHTML=msg;
+        }
+
+    </script>
+
+    <body>
+        <p>
+            <table class="table table-hover">
+                <tr class="table-waring">
+                    <td>品名</td>
+                    <td>單價</td>
+                </tr>
+            </table>
+        </p>
+
+
+        <div class="container mt-4">
+            <div class ="card-header bg-info text-white">
+                成績評鑑
+            </div>
+            <div class="card-body">
+                <p>
+                    輸入成績：<input type="text" class="form-control" id="input_score">
+                    
+                </p>
+                <button class="btn btn-info" onclick="fnScore()">傳送</button>
+                <p>
+                    <div id="showScore"></div>
+                </p>
+            </div>
+            <input type="button" value="按鈕" onclick="tsst()" class="btn btn-dark">
+            <p>
+                <script>
+                    var nan,nub,cls;
+                    nan = "mickey";
+                    nub = "10";
+                    cls = "16500"
+                    txt = "165000";
+
+                    
+                    alert("name："+ nan + "\nmath："+nub+"\nclass："+cls+"\ntext："+txt)
+                    document.write("<h1 style='color:pink ;'>name："+ nan+"<br>")
+                    document.write("math："+nub+"<br>")
+                    document.write("class："+ cls+"<br>")
+                    document.write("text："+ txt+"<br>")
+                    document.write("</h1>")
+                </script>
+            </p>
+            
+            <p>
+                <script>
+                document.write("<h1 style='color: blue;'>name："+ nan+"<br>")
+                document.write(parseFloat="210.5441"+"<br>")
+                document.write(parseInt="210"+"<br>")
+                document.write(eval(6>1)+"<br>")
+                document.write('<img src="images/ps4.jpg" class="container">')
+                document.write("</h1>")
+                </script>
+            </p>
+            <img src="images/ps4.jpg" class="container" style="width: 30px;">
+        </div>
+
+        
+        
+    </body>
+
+</html>
